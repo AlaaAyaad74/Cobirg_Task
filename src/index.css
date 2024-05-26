@@ -17,3 +17,41 @@ ul {
   list-style: none;
   display: flex;
 }
+img {
+  object-fit: cover;
+  object-position: center;
+}
+.first__cover {
+  background-image: url("../public/svgs/firstTraingle.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+}
+
+.slick-prev {
+  display: none !important;
+}
+.slick-next {
+  right: 10px;
+}
+.slick-slide {
+  width: 368px !important;
+}
+.slick-list {
+  height: 420px;
+}
+.second__cover {
+  background-image: url("../public/svgs/secRec.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+}
+.scroll_link {
+  cursor: pointer;
+}
+@media (max-width: 1090px) {
+  .first__cover,
+  .second__cover {
+    background-image: none;
+  }
+}

@@ -1,3 +1,4 @@
+import ScrollLink from "../scroll_Link/CustomScrollLink";
 import { Link } from "react-router-dom";
 import styles from "./header.module.css";
 import { useState } from "react";
@@ -25,19 +26,49 @@ function Header() {
       <div className={styles.second__row}>
         <ul className={collapse ? styles.active : ""}>
           <li>
-            <Link to={"/"}>Home</Link>
+            <ScrollLink
+              className="scroll_link"
+              to="ABOUT"
+              onClick={() => setCollapse(!collapse)}
+            >
+              About
+            </ScrollLink>
           </li>
           <li>
-            <Link to={"/"}>Projects</Link>
+            <ScrollLink
+              className="scroll_link"
+              to="PROJECTS"
+              onClick={() => setCollapse(!collapse)}
+            >
+              Projects
+            </ScrollLink>
           </li>
           <li>
-            <Link to={"/"}>Studio</Link>
+            <ScrollLink
+              className="scroll_link"
+              to="STUDIO"
+              onClick={() => setCollapse(!collapse)}
+            >
+              Studio
+            </ScrollLink>
           </li>
           <li>
-            <Link to={"/"}>Blog</Link>
+            <ScrollLink
+              className="scroll_link"
+              to="BLOG"
+              onClick={() => setCollapse(!collapse)}
+            >
+              Blog
+            </ScrollLink>
           </li>
           <li>
-            <Link to={"/"}>Contact</Link>
+            <ScrollLink
+              className="scroll_link"
+              to="CONTACT"
+              onClick={() => setCollapse(!collapse)}
+            >
+              Contact
+            </ScrollLink>
           </li>
           <li>
             <Link to={"/"}>Join as Design Expert</Link>

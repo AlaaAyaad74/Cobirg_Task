@@ -1,7 +1,7 @@
 import styles from "./statics.module.css";
 function Statistics() {
   return (
-    <section className={styles.main__Cont}>
+    <section className={styles.main__Cont} id="PROJECTS">
       <h1>Why LAND Interiors</h1>
       <div className={styles.statics__container}>
         <div className={styles.sec__icon} style={{ position: "relative" }}>

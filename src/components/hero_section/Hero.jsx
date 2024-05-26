@@ -3,7 +3,7 @@ import styles from "./hero.module.css";
 import { Link } from "react-router-dom";
 function Hero() {
   return (
-    <section className={styles.hero__container}>
+    <section className={styles.hero__container} id="ABOUT">
       <div className={styles.image__view}>
         <img loading="lazy" src="./images/hero.png" alt="hero image" />
       </div>
