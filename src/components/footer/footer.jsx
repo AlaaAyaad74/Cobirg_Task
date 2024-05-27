@@ -1,6 +1,6 @@
 import styles from "./footer.module.css";
-
-import { Link } from "react-router-dom";
+import ScrollLink from "../scroll_Link/CustomScrollLink";
+// import { Link } from "react-router-dom";
 function footer() {
   return (
     <footer id="CONTACT">
@@ -63,19 +63,29 @@ function footer() {
             <div className={styles.links}>
               <ul>
                 <li>
-                  <Link>About</Link>
+                  <ScrollLink className="scroll_link" to="ABOUT">
+                    About
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link>Projects</Link>
+                  <ScrollLink className="scroll_link" to="PROJECTS">
+                    Projects
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link>Studio</Link>
+                  <ScrollLink className="scroll_link" to="STUDIO">
+                    Studio
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link>Blog</Link>
+                  <ScrollLink className="scroll_link" to="BLOG">
+                    Blog
+                  </ScrollLink>
                 </li>
                 <li>
-                  <Link>Contact</Link>
+                  <ScrollLink className="scroll_link" to="CONTACT">
+                    Contact
+                  </ScrollLink>
                 </li>
               </ul>
             </div>

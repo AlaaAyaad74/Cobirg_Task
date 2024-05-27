@@ -1,16 +1,17 @@
 import styles from "./statics.module.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function Statistics() {
   return (
     <section className={styles.main__Cont} id="PROJECTS">
       <h1>Why LAND Interiors</h1>
       <div className={styles.statics__container}>
         <div className={styles.sec__icon} style={{ position: "relative" }}>
-          <img
+          <LazyLoadImage
             src="./svgs/calendar.svg"
             alt="calendar"
             style={{ width: "68px", height: "73px" }}
           />
-          <img
+          <LazyLoadImage
             src="./svgs/num.svg"
             alt="num"
             style={{ position: "absolute", top: "34px" }}
@@ -22,7 +23,7 @@ function Statistics() {
           </p>
         </div>
         <div className={styles.sec__icon}>
-          <img
+          <LazyLoadImage
             src="./svgs/home.svg"
             alt="calendar"
             style={{ width: "72px", height: "72px" }}

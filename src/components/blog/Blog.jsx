@@ -13,8 +13,8 @@ function Blog() {
     if (mainWidth > distance) {
       /**challenge2 */
       if (mainWidth > 0 && mainWidth - distance < 330) {
-        setDistance(0);
         translateRef.current.style.transform = `translateX(0px)`;
+        return setDistance(0);
       }
 
       setDistance((prevDistance) => {
