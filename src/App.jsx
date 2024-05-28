@@ -1,8 +1,10 @@
-import Blog from "./components/blog/Blog";
-import Hero from "./components/hero_section/Hero";
-import Projects from "./components/projects/Projects";
-import Statistics from "./components/statics/Statistics";
-import Footer from "./components/footer/footer";
+import { lazy } from "react";
+const Blog = lazy(() => import("./components/blog/Blog"));
+const Hero = lazy(() => import("./components/hero_section/Hero"));
+const Projects = lazy(() => import("./components/projects/Projects"));
+const Statistics = lazy(() => import("./components/statics/Statistics"));
+const Footer = lazy(() => import("./components/footer/footer"));
+
 function App() {
   return (
     <>
