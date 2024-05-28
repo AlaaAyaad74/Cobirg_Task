@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-
 import styles from "./blog.module.css";
 import { blogData } from "./data";
 import BlogCard from "../common/BlogCard";
@@ -29,7 +28,6 @@ function Blog() {
       translateRef.current.style.transform = `translateX(0px)`;
     }
   };
-
   return (
     <>
       <div className={styles.main__Cont} id="BLOG">

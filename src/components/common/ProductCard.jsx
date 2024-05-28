@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import styles from "./proCard.module.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function ProductCard({ img, title }) {
   return (
     <div className={styles.card__container}>
-      <LazyLoadImage src={img} alt={title} />
+      <img src={img} alt={title} />
 
       <h2>{title}</h2>
     </div>

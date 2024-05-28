@@ -1,15 +1,15 @@
-import ScrollLink from "../scroll_Link/CustomScrollLink";
 import { Link } from "react-router-dom";
+import ScrollLink from "../scroll_Link/CustomScrollLink";
 import styles from "./header.module.css";
 import { useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import logo from "../../../public/svgs/logo.svg";
 function Header() {
   const [collapse, setCollapse] = useState(false);
   return (
     <header>
       <div className={styles.first__row}>
-        <LazyLoadImage src={logo} alt="logo" className={styles.logo} />
+        <img src={logo} alt="logo" className={styles.logo} />
         {/* <img src="./svgs/logo.svg" alt="logo" className={styles.logo} /> */}
         <div className={styles.sub__Links}>
           <Link to={"/"}>Join as Design Expert</Link>

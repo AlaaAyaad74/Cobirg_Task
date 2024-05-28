@@ -1,16 +1,13 @@
-import { Suspense } from "react";
-
 import styles from "./hero.module.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import { Link } from "react-router-dom";
 function Hero() {
   return (
     <section className={styles.hero__container} id="ABOUT">
-      <Suspense fallback={<div>loading..</div>}>
-        <div className={styles.image__view}>
-          <LazyLoadImage src="./images/hero.png" alt="hero image" />
-        </div>
-      </Suspense>
+      <div className={styles.image__view}>
+        <img src="./images/hero.png" alt="hero image" />
+      </div>
+
       <div className={styles.card}>
         <div
           style={{

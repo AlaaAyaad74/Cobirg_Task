@@ -1,6 +1,5 @@
 import styles from "./footer.module.css";
 import ScrollLink from "../scroll_Link/CustomScrollLink";
-
 function footer() {
   return (
     <footer id="CONTACT">
