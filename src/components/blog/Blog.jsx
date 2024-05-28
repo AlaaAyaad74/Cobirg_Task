@@ -28,10 +28,6 @@ function Blog() {
       setDistance(0);
       translateRef.current.style.transform = `translateX(0px)`;
     }
-    // console.log(
-    //   blogData.length * 380 - window.innerWidth - distance > 0 &&
-    //     blogData.length * 380 - window.innerWidth - distance < 380
-    // );
   };
 
   return (

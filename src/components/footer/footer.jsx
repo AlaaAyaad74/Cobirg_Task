@@ -1,6 +1,6 @@
 import styles from "./footer.module.css";
 import ScrollLink from "../scroll_Link/CustomScrollLink";
-// import { Link } from "react-router-dom";
+
 function footer() {
   return (
     <footer id="CONTACT">
