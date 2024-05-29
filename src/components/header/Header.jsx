@@ -10,7 +10,7 @@ function Header() {
     <header>
       <div className={styles.first__row}>
         <img src={logo} alt="logo" className={styles.logo} />
-        {/* <img src="./svgs/logo.svg" alt="logo" className={styles.logo} /> */}
+
         <div className={styles.sub__Links}>
           <Link to={"/"}>Join as Design Expert</Link>
           <Link to={"/"}>Partner with LAND Interiors</Link>

@@ -1,10 +1,10 @@
 import styles from "./blogCard.module.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function BlogCard({ image, title, description }) {
   return (
     <div className={styles.blog_card_cont}>
-      <img src={image} alt={title} />
-
+      <LazyLoadImage src={image} alt="product" />
       <h2>{title}</h2>
       <p>{description}</p>
     </div>

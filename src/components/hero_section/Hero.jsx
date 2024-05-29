@@ -1,3 +1,4 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import styles from "./hero.module.css";
 
 import { Link } from "react-router-dom";
@@ -5,7 +6,7 @@ function Hero() {
   return (
     <section className={styles.hero__container} id="ABOUT">
       <div className={styles.image__view}>
-        <img src="./images/hero.png" alt="hero image" />
+        <LazyLoadImage src="./images/hero.png" alt="hero image" />
       </div>
 
       <div className={styles.card}>
